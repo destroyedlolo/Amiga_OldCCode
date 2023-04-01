@@ -1,0 +1,16 @@
+; Fichier servant a la création de LF.lib
+;créé par la commande : Libmake LFlib.libmake -o t: -llfs.lib
+; 12-11-1993: Ajout de LFInJoy.c
+cheure.c
+exist.c
+icos.c
+LFCrypt.c
+LFCryptB.c
+LFDecrypt.c
+LFDecryptB.c
+LFgets.c
+LFInJoy.c
+LFPrintf.a
+LFSPrintf.a
+LFStrDos.c
+LFatal.c

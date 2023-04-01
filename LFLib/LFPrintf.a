@@ -1,0 +1,14 @@
+        section ,code
+
+        xref    _ArpBase
+
+        xdef    _LFPrintf
+_LFPrintf:
+        move.l  A6,-(A7)
+        movea.l 8(sp),A0
+        lea.l   $c(sp),A1
+        movea.l _ArpBase(A4),A6
+        jsr     -228(A6)
+        movea.l (A7)+,A6
+        RTS
+        END

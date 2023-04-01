@@ -1,0 +1,14 @@
+        section ,code
+
+        xref    _ArpBase
+
+        xdef    _LFSPrintf
+_LFSPrintf:
+        move.l  A6,-(A7)
+        movem.l 8(sp),D0/A0
+        lea.l   $10(sp),A1
+        movea.l _ArpBase(A4),A6
+        jsr     -642(A6)
+        movea.l (A7)+,A6
+        RTS
+        END
